@@ -1,4 +1,4 @@
-<font size="6">Kartki </font>
+## Kartki
 
 Kartki is an application for words memorizing using flashcards. <br>
 Api is [here](https://github.com/liudmilah/kartki-api). <br>
