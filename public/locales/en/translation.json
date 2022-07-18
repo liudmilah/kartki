@@ -79,6 +79,7 @@
     "studySetImportWord": "Word",
     "studySetImportDefinition": "Definition",
     "studySetExportTitle": "Export study set",
+    "studySetImportNote": "* use Tab to split the word and the definition",
     "studySetExportCopy": "Copy text",
     "studySetExportCopied": "Copied",
     "studySetAddCard": "Add card",
