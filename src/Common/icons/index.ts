@@ -1,0 +1,11 @@
+export { default as DeleteIcon } from './DeleteIcon';
+export { default as AddIcon } from './AddIcon';
+export { default as DownloadIcon } from './DownloadIcon';
+export { default as CrossIcon } from './CrossIcon';
+export { default as BurgerIcon } from './BurgerIcon';
+export { default as PlayIcon } from './PlayIcon';
+export { default as EditIcon } from './EditIcon';
+export { default as UploadIcon } from './UploadIcon';
+export { default as StopIcon } from './StopIcon';
+export { default as RestartIcon } from './RestartIcon';
+export { default as InfoIcon } from './InfoIcon';

@@ -1,0 +1,52 @@
+.sets__title {
+    margin: 10px 0 20px;
+}
+
+.sets__select {
+    width: 240px;
+    margin: 7px 0;
+}
+
+.sets__item {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 15px;
+    margin: 7px 0;
+    box-shadow: 2px 2px 9px 1px rgba(184, 184, 184, 0.6);
+}
+
+.sets__item-name {
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+.sets__item-description {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.sets__cards-amount {
+    font-size: smaller;
+}
+
+.sets__not-found-wrap {
+    margin: 30px auto;
+    padding: 20px;
+    width: 300px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.sets__not-found-text {
+    display: block;
+}
+
+.sets__not-found-btn {
+    margin: 20px auto;
+    display: block;
+    padding: 10px;
+    width: 130px;
+}

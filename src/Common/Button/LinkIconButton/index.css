@@ -1,0 +1,17 @@
+.icon-button {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    height: 40px;
+}
+
+.icon-button span {
+    vertical-align: middle;
+ }
+
+.icon-button img {
+    height: 28px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+ }

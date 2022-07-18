@@ -1,0 +1,82 @@
+.edit-top__name, .edit-top__description {
+    display: flex;
+    align-items: center;
+}
+
+.edit-top__name label, .edit-top__description label {
+    margin-right: 8px;
+    width: 180px;
+    display: inline-block;
+}
+
+.edit-top__name input, .edit-top__description input {
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+.edit-top__import {
+    display: block;
+    margin: 20px 0;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 0.8em;
+}
+
+.edit-top__save, .edit-top__save_mobile  {
+    width: 130px;
+    padding: 0 10px;
+}
+
+.edit-top__save_mobile {
+    display: none;
+}
+
+.edit-body__add {
+    margin: 10px 0 70px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    box-shadow: 2px 2px 9px 1px rgba(184, 184, 184, 0.6);
+    justify-content: center;
+}
+
+.edit-body__add button {
+    background-color: transparent;
+    border: none;
+    color: #555;
+}
+
+.edit-body__add button:hover {
+    background-color: transparent!important;
+    color: #777;
+}
+
+.edit__bottom {
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .edit-top__name, .edit-top__description {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .edit-top__save {
+        display: none;
+    }
+    .edit-top__save_mobile, .edit__bottom button {
+        margin: 10px 0;
+        display: block;
+        width: 100%;
+    }
+    .edit-body__add {
+        margin: 0 0 30px;
+    }
+    .edit-top__name input, .edit-top__description input {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,26 @@
+.signup-confirm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.signup-confirm__container {
+    background-color: white;
+    width: 380px;
+}
+
+.signup-confirm__content {
+    padding: 30px;
+}
+
+.signup-confirm__title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.signup-confirm__text {
+    font-size: 0.8em;
+}

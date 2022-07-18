@@ -1,0 +1,35 @@
+.reset-password {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.reset-password__container {
+    background-color: white;
+    width: 380px;
+}
+
+.reset-password__content {
+    padding: 30px;
+}
+
+.reset-password__title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.reset-password__text {
+    font-size: 0.8em;
+}
+
+.reset-password__button {
+    width: 100%;
+}
+
+.reset-password__input {
+    display: block;
+    margin: 5px 0 20px 0;
+}

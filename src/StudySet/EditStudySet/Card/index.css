@@ -1,0 +1,86 @@
+.card {
+    background-color: #fff;
+    display: flex;
+    border-radius: 5px;
+    margin: 7px 0;
+    padding: 10px;
+    align-items: center;
+    box-shadow: 2px 2px 9px 1px rgba(184, 184, 184, 0.6);
+}
+
+.card__number, .card__number_mobile {
+    width: 30px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.card__number span, .card__number_mobile span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.card__number_mobile {
+    display: none;
+}
+
+.card__term {
+    width: 20%;
+    margin-right: 10px;
+}
+
+.card__input {
+    width: 100%;
+}
+
+.card__description {
+    flex: 1 1 auto;
+}
+
+.card__btn-delete {
+    width: 4%;
+    text-align: right;
+}
+.card__btn-delete button {
+    padding: 10px;
+    height: 35px;
+    width: 35px;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+.card__btn-delete button:hover {
+    background-color: #fff!important;
+    border: 1px solid #fff!important;
+}
+
+@media (max-width: 767px) {
+    .card {
+        flex-direction: column;
+    }
+    .card__input {
+        margin: 0 0 10px;
+    }
+    .card__term {
+        width: 100%;
+        margin: 0;
+    }
+    .card__description {
+        width: 100%;
+    }
+    .card__btn-delete {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card__number_mobile {
+        display: block;
+    }
+    .card__number {
+        display: none;
+    }
+}

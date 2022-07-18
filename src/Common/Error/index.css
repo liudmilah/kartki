@@ -1,0 +1,30 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found__container {
+    background-color: white;
+    width: 380px;
+}
+
+.not-found__content {
+    text-align: center;
+    padding: 30px;
+}
+
+.not-found__text {
+    font-weight: bold;
+    font-size: 1.8em;
+    color: #777;
+}
+
+.not-found__link {
+    display: block;
+    color: #6b61ad;
+    margin: 50px 0;
+    font-size: 1.3em;
+    text-decoration: underline;
+}

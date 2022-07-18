@@ -1,0 +1,177 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1;
+    background-color: #f5f5f5;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased !important;
+    text-rendering: optimizelegibility !important;
+    letter-spacing: .03em;
+}
+
+#root {
+    display: flex;
+    min-height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #35D2AB;
+}
+
+.header:before {
+    background-color: #35D2AB;
+}
+
+.main {
+    display: flex;
+    flex: 1 1 auto;
+    margin: 75px 0 0 0;
+}
+
+.container {
+    max-width: 1200px;
+    min-width: 800px;
+    margin: 0 auto;
+}
+@media (max-width: 767px) {
+    .container {
+        min-width: 320px;
+    }
+}
+
+.title {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.main__body {
+    padding: 10px 20px;
+}
+
+._error {
+    border-color: red !important;
+}
+
+.btn {
+    height: 35px;
+    width: 280px;
+    font-size: 14px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #fff;
+    border: 1px solid #109476;
+    background-color: #109476;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.btn:hover:enabled {
+    background-color: #0d8066;
+}
+.btn-cancel {
+    color: #666;
+    background-color: #fff;
+    border: 1px solid #989393;
+}
+.btn-cancel:hover:enabled {
+    background-color: #fff;
+    color: #111;
+    border: 1px solid #111;
+}
+
+.btn-secondary {
+    border: 1px solid #FFB640!important;
+    background-color: #FFB640!important;
+    color: #fff!important;
+}
+.btn-secondary:hover:not(:disabled) {
+    background-color: #fca933 !important;
+}
+.btn-transparent {
+    border: none !important;
+    color: #555;
+    background-color: transparent !important;
+}
+.btn-transparent:hover {
+    background-color: transparent !important;
+    color: #111;
+}
+
+button.disabled,
+button:disabled,
+button[disabled]{
+  border: 1px solid #ccc!important;
+  background-color: #e9e5ef!important;
+  color: #ccc!important;
+  cursor: default!important;
+}
+button.disabled:hover{
+    border: 1px solid #cccccc!important;
+    background-color: #e9e5ef!important;
+}
+
+.input {
+    font-size: 16px;
+    background-color: #fff;
+    height: 40px;
+    width: 100%;
+    outline: 0;
+    padding: 7px;
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+}
+.input:focus {
+    border: 1px solid #6b61ad!important;
+}
+
+a {
+    color: #0d8066 !important;
+}
+.text-secondary {
+    color: #A66E15!important;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    min-width: 120px;
+    background-color: #000;
+    opacity: 0.7;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+    text-overflow: ellipsis;
+    letter-spacing: -1px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #444 transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

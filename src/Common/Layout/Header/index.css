@@ -1,0 +1,138 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+}
+.header:before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+.header__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 67px;
+    padding: 0 15px;
+}
+.header__list {
+    display: flex;
+    z-index: 2;
+}
+.header__list li {
+    list-style: none;
+    margin-left: 20px;
+}
+.header__link {
+    color: #222!important;
+    white-space: nowrap;
+    letter-spacing: 0.03px;
+    font-family: sans-serif;
+    text-transform: lowercase;
+    font-size: 18px;
+}
+
+.header__link_underline {
+    text-decoration: underline;
+}
+
+.header__link:hover {
+    text-decoration: underline;
+}
+.header__burger {
+    display: none;
+}
+/*  header logo  */
+.logo {
+    position: relative;
+    z-index: 5;
+}
+.logo__link {
+    text-decoration: none;
+    color: #222!important;
+    font-weight: bold;
+    font-size: 32px;
+}
+.logo__button {
+    display: inline-flex;
+    cursor: pointer;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    vertical-align: middle;
+    padding: 10px;
+}
+.logo__img img {
+    max-width: 100%;
+    display: block;
+}
+@media (max-width: 767px) {
+    .header:before {
+        position: absolute;
+    }
+    .header__burger {
+        display: block;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 3;
+    }
+    .header__burger:before, .header__burger:after, .header__burger span {
+        content: '';
+        background-color: #555;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+    .header__burger:before {
+        top: 0;
+    }
+    .header__burger span {
+        top: 9px;
+    }
+    .header__burger:after {
+        bottom: 0;
+    }
+    .header__burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header__burger.active span {
+        transform: scale(0);
+    }
+    .header__menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #555;
+        padding: 60px 0 0 0;
+        transition: all 0.3s ease 0s;
+    }
+    .header__menu.active {
+        top: 0;
+    }
+    .header__list {
+        display: block;
+        text-align: left;
+    }
+    .header__list li {
+        margin: 30px 10px;
+    }
+    .header__list a {
+        text-decoration: none;
+        color: #F9DF7B !important;
+    }
+}

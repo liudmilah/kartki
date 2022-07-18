@@ -1,0 +1,175 @@
+.flashcards {
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.flashcards__content {
+    width: 600px;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+.flashcards__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 33px;
+}
+
+.flashcards__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flashcards__progress {
+    flex: 1 0 auto;
+    padding: 4px;
+    font-size: 0.8em;
+}
+
+.flashcards__progressbar {
+    flex: 1 0 200px;
+}
+
+.flashcards__actions {
+    flex: 1 0 auto;
+}
+
+.flashcards__action-btn {
+    height: 40px;
+    width: 42px;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.flashcards__flip-card {
+    height: 500px;
+    width: 420px;
+    perspective: 1000px;
+    background-color: transparent;
+    border: #ececec;
+    padding: 5px 20px 20px;
+    color: #555 !important;
+    margin: 0 auto;
+}
+
+.flashcards__flip-card-inner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    background-color: transparent;
+    word-break: break-word;
+}
+
+.flashcards__flip-card-front, .flashcards__flip-card-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.flashcards__flip-card-inner.flipped {
+    transform: rotateY(180deg);
+}
+
+.flashcards__flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.flashcards__remember-btn {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 47%;
+    height: 80px;
+    border: 1px solid #b8b8b8!important;
+}
+
+.flashcards__remember-text, .flashcards__dont-remember-text {
+    font-size: 1.5em;
+    margin-right: 5px;
+}
+
+.flashcards__remember-text {
+    color: #016501;
+}
+
+.flashcards__dont-remember-text {
+    color: #ef0202;
+}
+
+.flashcards__remember-amount {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Indie Flower", sans-serif;
+    margin-top: -5px;
+}
+
+.flashcards__result {
+    display: flex;
+    height: 400px;
+    width: 300px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+.flashcards__result-thumb {
+    display: block;
+    height: 70px;
+    width: 93px;
+    margin-bottom: 20px;
+}
+
+.flashcards__result-cone {
+    display: block;
+    height: 70px;
+    width: 80px;
+    margin-bottom: 40px;
+}
+
+.flashcards__result-text {
+    margin-bottom: 30px;
+}
+
+.flashcards__result-btns {
+    display: flex;
+    margin-bottom: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flashcards__result-btn {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+    .flashcards__flip-card {
+        height: 360px;
+        width: 300px;
+    }
+    .flashcards__content {
+        width: 320px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
