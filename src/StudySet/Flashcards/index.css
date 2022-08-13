@@ -6,8 +6,16 @@
 
 .flashcards__content {
     width: 600px;
+    height: 100%;
     margin: 10px auto;
     padding: 15px;
+}
+
+.flashcards__title {
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 .flashcards__header {
@@ -77,8 +85,8 @@
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 .flashcards__flip-card-inner.flipped {
@@ -91,10 +99,10 @@
 
 .flashcards__remember-btn {
     padding: 5px;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 5px;
     width: 47%;
-    height: 80px;
+    height: 70px;
     border: 1px solid #b8b8b8!important;
 }
 
@@ -164,7 +172,7 @@
 
 @media (max-width: 767px) {
     .flashcards__flip-card {
-        height: 360px;
+        height: 320px;
         width: 300px;
     }
     .flashcards__content {

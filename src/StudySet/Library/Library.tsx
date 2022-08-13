@@ -16,7 +16,7 @@ const emptySet: Array<TStudySet> = [];
 function Library() {
     const { data, loading, error } = useGetSets();
     const sets: Array<TStudySet> = data ? data.sets : emptySet;
-    const { direction, orderBy, handleSort, sortedData } = useSorting(sets, 'name', 'asc');
+    const { direction, orderBy, handleSort, sortedData } = useSorting(sets, 'created', 'desc');
     const { t } = useTranslation();
 
     if (error) {

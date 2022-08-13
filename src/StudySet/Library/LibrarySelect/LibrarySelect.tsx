@@ -19,18 +19,24 @@ function LibrarySelect({ visible, onChange, orderBy, direction }: Props) {
         onChange(arr[0] as keyof TStudySet, arr[1] as TDirection);
     };
 
+    const options = [
+        { value: 'name-asc', label: t('setsSetNameSortAsc') },
+        { value: 'name-desc', label: t('setsSetNameSortDesc') },
+        { value: 'author-asc', label: t('setsSetAuthorSortAsc') },
+        { value: 'author-desc', label: t('setsSetAuthorSortDesc') },
+        { value: 'created-asc', label: t('setsSetCreatedSortAsc') },
+        { value: 'created-desc', label: t('setsSetCreatedSortDesc') },
+    ];
+
     if (!visible) {
         return null;
     }
 
     return (
         <select className="input sets__select" name="sortBy" onChange={handleChange} value={`${orderBy}-${direction}`}>
-            <option value="name-asc">{t('setsSetNameSortAsc')}</option>
-            <option value="name-desc">{t('setsSetNameSortDesc')}</option>
-            <option value="author-asc">{t('setsSetAuthorSortAsc')}</option>
-            <option value="author-desc">{t('setsSetAuthorSortDesc')}</option>
-            <option value="created-asc">{t('setsSetCreatedSortAsc')}</option>
-            <option value="created-desc">{t('setsSetCreatedSortDesc')}</option>
+            {options.map((o) => (
+                <option key={o.value} value={o.value} dangerouslySetInnerHTML={{ __html: o.label }} />
+            ))}
         </select>
     );
 }

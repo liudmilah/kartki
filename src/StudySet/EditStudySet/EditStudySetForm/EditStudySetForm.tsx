@@ -54,7 +54,7 @@ function EditStudySetForm({ studySet }: Props) {
     const [formData, setFormData] = useState<FormData>(getInitFormData(studySet));
     const [errors, setErrors] = useState<Errors>(initErrors);
     const [apiError, setApiError] = useState('');
-    const { send, error, resultingSet, reset } = useEditRequest();
+    const { send, error, resultingSet, reset, loading } = useEditRequest();
     const navigate = useNavigate();
     const { t } = useTranslation();
 
@@ -205,7 +205,7 @@ function EditStudySetForm({ studySet }: Props) {
             </div>
 
             <div className="edit__bottom">
-                <button onClick={handleClickSaveButton} className="btn" disabled={hasErrors()}>
+                <button onClick={handleClickSaveButton} className="btn" disabled={loading || hasErrors()}>
                     {t('studySetSave')}
                 </button>
             </div>

@@ -103,6 +103,7 @@ function Flashcards(): JSX.Element | null {
     return (
         <div className="flashcards">
             <div className="flashcards__content">
+                <div className="flashcards__title">{studySet.name}</div>
                 <div className="flashcards__header">
                     <div className="flashcards__progress">{`${passedAmount} / ${cards.length}`}</div>
                     <div className="flashcards__progressbar">
@@ -117,7 +118,6 @@ function Flashcards(): JSX.Element | null {
                         </button>
                     </div>
                 </div>
-
                 <div className="flashcards__flip-card">
                     <div className={cx('flashcards__flip-card-inner', { flipped })}>
                         <div className="flashcards__flip-card-front" onClick={flipCard}>
@@ -128,7 +128,6 @@ function Flashcards(): JSX.Element | null {
                         </div>
                     </div>
                 </div>
-
                 <div className="flashcards__footer">
                     <button className="btn btn-transparent flashcards__remember-btn" onClick={dontRemember}>
                         <span className="flashcards__dont-remember-text">&#10008;</span>
